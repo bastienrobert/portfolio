@@ -1,0 +1,6 @@
+- name: First project
+  slug: first-project
+  fr:
+    description: FR Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  en:
+    description: EN Lorem ipsum dolor sit amet, consectetur adipisicing elit

@@ -1,0 +1,15 @@
+---
+slug: projects
+---
+<h1><%= t('projects.h1') %></h1>
+
+<% data.projects.each do |project| %>
+  <% link_to proxy_url(project.slug) do %>
+    <%= project_image(project, 'main.jpg', {
+      'alt' => 'cover image',
+      'class' => 'cover'
+      }) %>
+    <br>
+    <%= project.name %>
+  <% end %>
+<% end %>

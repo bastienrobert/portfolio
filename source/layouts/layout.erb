@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= title_translate %></title>
+    <meta name="description" content="<%= description_translate %>" />
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= title_translate %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= config[:host] + current_page.url %>" />
+    <meta property="og:image" content="<%= data.meta.image %>" />
+    <meta property="og:description" content="<%= description_translate %>" />
+    <meta property="og:site_name" content="<%= data.meta.title %>" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= data.meta.twitter %>">
+    <meta name="twitter:title" content="<%= title_translate %>">
+    <meta name="twitter:description" content="<%= description_translate %>">
+    <meta name="twitter:creator" content="<%= data.meta.twitter %>">
+    <meta name="twitter:image:src" content="<%= data.meta.image %>">
+
+    <!-- Google Webmaster Tools -->
+    <meta name="google-site-verification" content="<%= data.meta.google %>" />
+
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+    <%= partial 'layouts/partials/header' %>
+    <%= yield %>
+    <%= partial 'layouts/partials/footer' %>
+
+    <%= javascript_include_tag "all" %>
+  </body>
+</html>

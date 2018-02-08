@@ -1,0 +1,18 @@
+---
+slug: homepage
+dynamic:
+  enable: true
+  data: project
+  name_and_slug_translate: false
+  name: name
+  description: description
+  slug: slug
+dir:
+  - projects
+---
+<h1><%= project.name %></h1>
+<p><%= project[locale.to_s].description %></p>
+<%= project_image(project, 'main.jpg', {
+  'class' => 'cover',
+  'async' => true
+  }) %>

@@ -1,0 +1,37 @@
+---
+fr:
+  # ------------------
+  # Root translations
+  # ------------------
+  titles:
+    homepage: "Accueil"
+    about: "A propos"
+    projects: "Projets"
+    project: "Projet"
+
+  descriptions:
+    homepage: "La description pour la page d'accueil"
+
+  paths:
+    # Paths
+    homepage: ''
+    about: "a-propos"
+    projects: "projets"
+
+  # ------------------
+  # Header & footer
+  # ------------------
+  header:
+    home: "Accueil"
+
+  # ------------------
+  # Page translations
+  # ------------------
+  homepage:
+    h1: "Accueil"
+
+  about:
+    h1: "A propos"
+
+  projects:
+    h1: "Projets"
