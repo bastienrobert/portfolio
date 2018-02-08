@@ -35,4 +35,4 @@ after_script:
 env :
   global :
     - TEST=true
-    - CODECLIMATE_REPO_TOKEN=8ffed971daecb7ed1f090650a0a06dbfa4cdecde2ab5214087c656d11639e64c
+    - CODECLIMATE_REPO_TOKEN=318bfc563d297acab6ff3f1d35b76373ded071e7ca8abe448c9b5d4866822870
