@@ -1,33 +1,24 @@
+@import "misc/index";
+@import "layout/index";
+@import "pages/index";
+
 body {
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  color: $grey;
+  font-family: $font-primary;
 }
 
 a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
-}
-
-img {
-  max-width: 10vw;
+  text-decoration: none;
+  color: inherit;
+  transition: color .2s;
 }
 
 // When you're on the link
 [aria-current] {
-  font-weight: 700;
-  font-style: italic;
+  color: $color-secondary;
+}
+
+// When menu is open
+[menu] body {
+  overflow: hidden;
 }

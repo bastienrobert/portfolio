@@ -1,15 +1,27 @@
 ---
 slug: projects
 ---
-<h1><%= t('projects.h1') %></h1>
-
+<div id="oh-my-pi">
+  <h1 id="project-title"><%= t('titles.projects') %></h1>
+  <img src="#" id="project-image" alt="">
+</div>
 <% data.projects.each do |project| %>
-  <% link_to proxy_url(project.slug) do %>
-    <%= project_image(project, 'main.jpg', {
+  <% link_to proxy_url(project.slug), class: 'project' do %>
+    <!-- <%= project_image(project, 'main.jpg', {
       'alt' => 'cover image',
       'class' => 'cover'
-      }) %>
-    <br>
-    <%= project.name %>
+      }) %> -->
+    <h2><%= project.name %></h2>
+    <span class="show-more">
+      <%= t('projects.show-more') %>
+    </span>
+    <span class="work">
+      <%= project[lang.to_s].work %>
+    </span>
+    <span class="technologies">
+      <% project.technologies.each_with_index do |t, i| %>
+        <%= t %><%= ", " if i != (project.technologies.count - 1) %>
+      <% end %>
+    </span>
   <% end %>
 <% end %>

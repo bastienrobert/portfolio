@@ -21,8 +21,6 @@ en:
   # ------------------
   # Header & footer
   # ------------------
-  header:
-    home: "Homepage"
 
   # ------------------
   # Page translations
@@ -34,4 +32,4 @@ en:
     h1: "About"
 
   projects:
-    h1: "Projects"
+    show-more: "show more"

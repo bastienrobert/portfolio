@@ -1,6 +1,12 @@
 - name: First project
   slug: first-project
+  color: "#E66242"
+  technologies:
+    - Rails
+    - VueJS
   fr:
     description: FR Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    work: Développement front & back-end
   en:
     description: EN Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    work: Front and back-end development

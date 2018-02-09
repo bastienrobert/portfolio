@@ -1,0 +1,13 @@
+header {
+  width: 80%;
+  margin: 3em auto;
+  text-align: right;
+  a {
+    margin: 0 2em;
+    text-transform: lowercase;
+    &:focus,
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

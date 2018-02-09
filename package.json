@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "bastien-robert-portfolio",
   "version": "1.0.0",
-  "description": "Let's make a portfolio starter",
+  "description": "Let's make my portfolio",
   "main": "config.rb",
   "scripts": {
     "test": "mocha --require test/helpers/dom.js --compilers js:babel-core/register",
@@ -42,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bastienrobert/portfolio-starter.git"
+    "url": "git+https://github.com/bastienrobert/bastienrobert.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bastienrobert/portfolio-starter/issues"
+    "url": "https://github.com/bastienrobert/bastienrobert/issues"
   },
-  "homepage": "https://github.com/bastienrobert/portfolio-starter#readme"
+  "homepage": "https://github.com/bastienrobert/bastienrobert#readme"
 }

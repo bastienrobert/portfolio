@@ -27,12 +27,15 @@
     <!-- Google Webmaster Tools -->
     <meta name="google-site-verification" content="<%= data.meta.google %>" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.1.1/turbolinks.js" type="text/javascript"></script>
     <%= stylesheet_link_tag "application" %>
   </head>
   <body>
     <%= partial 'layouts/partials/header' %>
-    <%= yield %>
-    <%= partial 'layouts/partials/footer' %>
+    <section id="<%= current_page.data.slug %>">
+      <%= yield %>
+    </section>
+    <!-- <%= partial 'layouts/partials/footer' %> -->
 
     <%= javascript_include_tag "all" %>
   </body>
