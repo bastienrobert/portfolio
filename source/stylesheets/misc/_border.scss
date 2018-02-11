@@ -1,9 +1,11 @@
-.screen-border {
+#border {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  // Box shadow is in the ERB header partial
+  box-shadow: inset 0px 0px 0px 17.5px #C1EDF5;
+  transition: box-shadow .2s;
+  // Box shadow is managed in JS
 }

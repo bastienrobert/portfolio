@@ -6,7 +6,7 @@ slug: projects
   <img src="#" id="project-image" alt="">
 </div>
 <% data.projects.each do |project| %>
-  <% link_to proxy_url(project.slug), class: 'project' do %>
+  <% link_to proxy_url(project.slug), class: 'project', "data-border-color": project.color do %>
     <!-- <%= project_image(project, 'main.jpg', {
       'alt' => 'cover image',
       'class' => 'cover'

@@ -32,7 +32,8 @@
   </head>
   <body>
     <%= partial 'layouts/partials/header' %>
-    <section id="<%= current_page.data.slug %>">
+    <section id="<%= current_page.data.slug %>"
+      <%= "data-border-color=#{current_page.data.borderColor}" if current_page.data.borderColor != nil %>>
       <%= yield %>
     </section>
     <!-- <%= partial 'layouts/partials/footer' %> -->
