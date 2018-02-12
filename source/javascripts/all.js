@@ -2,3 +2,4 @@
 import Favicon from './components/Favicon.js'
 import Loader from './components/Loader.js'
 import BorderColor from './components/BorderColor.js'
+import OhMyPi from './components/OhMyPi.js'

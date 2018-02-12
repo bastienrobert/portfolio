@@ -5,7 +5,7 @@ class BorderColor {
     this.boxShadowData = this.parseBorderBox()
     this.colorEngine(this.color)
     this.projects = document.getElementsByClassName('project')
-    this.projects != null ? this.projectsEvent() : null
+    this.projects != null ? this.projectsEvents() : null
   }
   getColor () {
     let sections = document.getElementsByTagName('section')
@@ -20,7 +20,7 @@ class BorderColor {
   colorEngine (color) {
     this.border.style.boxShadow = color + ' ' + this.boxShadowData
   }
-  projectsEvent () {
+  projectsEvents () {
     for (let i = 0; i < this.projects.length; i++) {
       let project = this.projects[i]
       project.addEventListener('mouseover', () => {

@@ -2,26 +2,24 @@
 slug: projects
 ---
 <div id="oh-my-pi">
-  <h1 id="project-title"><%= t('titles.projects') %></h1>
-  <img src="#" id="project-image" alt="">
+  <h1 class="pi-title"><%= t('titles.projects') %></h1>
+  <img src="#" class="pi-image" alt="Project image">
 </div>
-<% data.projects.each do |project| %>
-  <% link_to proxy_url(project.slug), class: 'project', "data-border-color": project.color do %>
-    <!-- <%= project_image(project, 'main.jpg', {
-      'alt' => 'cover image',
-      'class' => 'cover'
-      }) %> -->
-    <h2><%= project.name %></h2>
-    <span class="show-more">
-      <%= t('projects.show-more') %>
-    </span>
-    <span class="work">
-      <%= project[lang.to_s].work %>
-    </span>
-    <span class="technologies">
-      <% project.technologies.each_with_index do |t, i| %>
-        <%= t %><%= ", " if i != (project.technologies.count - 1) %>
-      <% end %>
-    </span>
+<ul id="projects-list">
+  <% data.projects.each do |project| %>
+    <% link_to proxy_url(project.slug), class: 'project', data: {'border-color': project.color, project: project.slug} do %>
+      <h2><%= project.name %></h2>
+      <span class="show-more">
+        <%= t('projects.show-more') %>
+      </span>
+      <span class="work">
+        <%= project[lang.to_s].work %>
+      </span>
+      <span class="technologies">
+        <% project.technologies.each_with_index do |t, i| %>
+          <%= t %><%= ", " if i != (project.technologies.count - 1) %>
+        <% end %>
+      </span>
+    <% end %>
   <% end %>
-<% end %>
+</ul>

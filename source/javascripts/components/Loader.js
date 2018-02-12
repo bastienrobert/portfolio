@@ -10,20 +10,26 @@ WHAT IT HAS TODO ?
 - On progress over
   - Hide the loader view
   - Z-INDEX the border to be in back of all
+
+
+LISTENER ?
+window.getComputedStyle(document.getElementsByClassName('turbolinks-progress-bar')[0]).width
+-> Width of the turbolinks progress bar
 */
 
 class Loader {
   constructor () {
-    this.value = Turbolinks.controller.adapter.progressBar.value
+    this.value = window.getComputedStyle(document.getElementsByClassName('turbolinks-progress-bar')[0])
+                  .width
+                  .replace(/\D+/g, '')
     this.border = document.getElementById('border')
     this.loader = document.getElementById('progress')
-    this.turbolinks = document.getElementsByClassName('turbolinks-progress-bar')[0]
     this.event()
   }
   event () {
-    // this.turbolinks.addEventListener('change', () => {
-    //   console.log(this.turbolinks.style)
-    // })
+    this.loader.addEventListener('change', () => {
+      alert('HE')
+    })
   }
 }
 
