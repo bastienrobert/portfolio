@@ -18,6 +18,7 @@ class BorderColor {
     }
   }
   colorEngine (color) {
+    Turbolinks.clearCache()
     this.border.style.boxShadow = color + ' ' + this.boxShadowData
   }
   projectsEvents () {

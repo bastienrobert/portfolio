@@ -12,6 +12,7 @@ class OhMyPi {
     for (let i = 0; i < this.projects.length; i++) {
       let project = this.projects[i]
       project.addEventListener('mouseover', () => {
+        this.title.innerHTML = project.getElementsByTagName('h2')[0].innerHTML
         this.title.style.color = project.dataset.borderColor
         this.title.style.top = project.getBoundingClientRect().top + 'px'
         this.setImage(project.dataset.project)
@@ -23,12 +24,7 @@ class OhMyPi {
     }
   }
   setImage (slug) {
-    this.image.src = '/images/' + slug + '/main.jpg'
-    let x = document.documentElement.clientWidth - this.image.width
-    let y = document.documentElement.clientHeight - this.image.height
-    this.image.style.filter
-    this.image.style.left = Math.random() * x + 'px'
-    this.image.style.top = Math.random() * y + 'px'
+    this.image.src = '/images/' + slug + '/cover.jpg'
   }
 }
 

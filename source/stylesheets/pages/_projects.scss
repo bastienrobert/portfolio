@@ -48,6 +48,8 @@
       font-weight: 900;
       font-style: italic;
       text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
       opacity: .15;
       left: 50%;
       transform: translate(-50%, -30%);
@@ -56,6 +58,9 @@
       position: fixed;
       width: 25%;
       max-width: 500px;
+      top: 50%;
+      right: 5em;
+      transform: translateY(-50%);
     }
     &.visible {
       visibility: visible;
