@@ -24,7 +24,7 @@
     color: $color-secondary;
     font-size: .875em;
     margin-left: 2em;
-    transition: visibility .6s ease-in;
+    transition: visibility .6s $ease-in-out-circ;
     &:after {
       content: '';
       position: absolute;
@@ -41,7 +41,10 @@
   }
   #oh-my-pi {
     visibility: hidden;
-    transition: visibility .1s;
+    .pi-title,
+    .pi-svg {
+      opacity: 0;
+    }
     .pi-title {
       position: fixed;
       font-size: 13.75em;
@@ -50,20 +53,30 @@
       text-transform: uppercase;
       text-align: center;
       white-space: nowrap;
-      opacity: .15;
       left: 50%;
       transform: translate(-50%, -30%);
+      transition: opacity .35s $ease-in-cubic;
     }
-    .pi-image {
+    .pi-svg {
       position: fixed;
       width: 25%;
       max-width: 500px;
       top: 50%;
       right: 5em;
       transform: translateY(-50%);
+      transition: opacity .4s $ease-in-cubic;
+    }
+    .pi-image {
+      height: auto;
     }
     &.visible {
       visibility: visible;
+      .pi-title {
+        opacity: .15;
+      }
+      .pi-svg {
+        opacity: 1;
+      }
     }
   }
   #projects-list {

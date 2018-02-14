@@ -1,0 +1,8 @@
+<div class="mockups">
+  <%= partial 'partials/computer', locals: {mask: false, image: (project.mockups.computer || project.main)} %>
+  <div class="iphones">
+    <% project.mockups.iphone.each_with_index do |image, i| %>
+      <%= partial 'partials/iphone', locals: {id: i, image: image} %>
+    <% end %>
+  </div>
+</div>

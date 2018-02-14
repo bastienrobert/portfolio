@@ -33,3 +33,12 @@ en:
 
   projects:
     show-more: "show more"
+
+  project:
+    main:
+      customer: "customer"
+      production: "production"
+      technologies: "technologies"
+    description:
+      few-words: "Few words"
+      website: "Website"

@@ -1,0 +1,8 @@
+#project {
+  @import "main";
+  @import "mockups";
+  img,
+  svg {
+    max-width: 400px;
+  }
+}

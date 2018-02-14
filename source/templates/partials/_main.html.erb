@@ -1,0 +1,20 @@
+<div class="main">
+  <%= partial 'partials/computer', locals: {mask: true, image: project.main} %>
+  <div class="details">
+    <span>
+      <em><%= t('project.main.customer') %></em>
+      <%= project.customer %>
+    </span>
+    <span>
+      <em><%= t('project.main.production') %></em>
+      <%= project[locale.to_s].work %>
+      <%= project[locale.to_s].main.production.downcase %>
+    </span>
+    <span>
+      <em><%= t('project.main.technologies') %></em>
+      <% project.technologies.each_with_index do |t, i| %>
+        <%= t %><%= ", " if i != (project.technologies.count - 1) %>
+      <% end %>
+    </span>
+  </div>
+</div>

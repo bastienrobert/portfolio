@@ -14,4 +14,8 @@ module ApplicationHelper
     image_tag("#{p.slug}/#{i}", opt)
   end
 
+  def project_image_url(p, i)
+    return "/#{config[:images_dir]}/#{p.slug}/#{i}"
+  end
+
 end

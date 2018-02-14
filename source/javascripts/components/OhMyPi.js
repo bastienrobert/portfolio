@@ -5,6 +5,8 @@ class OhMyPi {
       this.projects = document.getElementsByClassName('project')
       this.title = this.pi.getElementsByClassName('pi-title')[0]
       this.image = this.pi.getElementsByClassName('pi-image')[0]
+      this.color = this.pi.getElementsByClassName('pi-image-color')[0]
+      this.preload()
       this.events()
     }
   }
@@ -14,6 +16,7 @@ class OhMyPi {
       project.addEventListener('mouseover', () => {
         this.title.innerHTML = project.getElementsByTagName('h2')[0].innerHTML
         this.title.style.color = project.dataset.borderColor
+        this.color.style.fill = project.dataset.borderColor
         this.title.style.top = project.getBoundingClientRect().top + 'px'
         this.setImage(project.dataset.project)
         this.pi.classList.add('visible')
@@ -24,7 +27,13 @@ class OhMyPi {
     }
   }
   setImage (slug) {
-    this.image.src = '/images/' + slug + '/cover.jpg'
+    this.image.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/images/' + slug + '/cover.jpg')
+  }
+  preload () {
+    for (let i = 0; i < this.projects.length; i++) {
+      let img = new Image()
+      img.src = '/images/' + this.projects[i].dataset.project + '/cover.jpg'
+    }
   }
 }
 

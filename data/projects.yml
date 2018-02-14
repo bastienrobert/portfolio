@@ -1,12 +1,23 @@
-- name: First project
-  slug: first-project
+- name: TradFood
+  slug: tradfood
   color: "#E66242"
+  url: https://tradfood.fr
+  main: cover.jpg
+  customer: IUT Formation MMI
+  mockups:
+    iphone:
+      - iphone-1.png
+      - iphone-2.png
   technologies:
     - Rails
     - VueJS
   fr:
-    description: FR Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
     work: Développement front & back-end
+    main:
+      production: site internet culinaire
   en:
-    description: EN Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
     work: Front and back-end development
+    main:
+      production: culinary website
