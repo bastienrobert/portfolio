@@ -21,6 +21,8 @@ fr:
   # ------------------
   # Header & footer
   # ------------------
+  header:
+    top: haut
 
   # ------------------
   # Page translations

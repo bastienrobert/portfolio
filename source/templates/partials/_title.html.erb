@@ -1,5 +1,5 @@
 <div class="title">
-  <h1><%= project.name %></h1>
+  <h1 style="color: <%= project.color %>"><%= project.name %></h1>
   <%= project_image(project, (project.logo == nil ? 'logo.svg' : project.logo), {
     'class' => 'logo'
     }) %>

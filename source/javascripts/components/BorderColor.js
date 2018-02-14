@@ -8,6 +8,7 @@ class BorderColor {
     this.projects != null ? this.projectsEvents() : null
   }
   getColor () {
+    Turbolinks.clearCache()
     let sections = document.getElementsByTagName('section')
     for (let i = 0; i < sections.length; i++) {
       if (sections[i].dataset.borderColor != null) {
@@ -18,7 +19,6 @@ class BorderColor {
     }
   }
   colorEngine (color) {
-    Turbolinks.clearCache()
     this.border.style.boxShadow = color + ' ' + this.boxShadowData
   }
   projectsEvents () {

@@ -1,6 +1,38 @@
 .mockups {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .computer {
+    width: 60%;
+    position: relative;
+    svg {
+      width: 100%;
+      height: auto;
+      overflow: visible;
+    }
+  }
+  .iphones {
+    margin-top: 4em;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .iphone {
+      width: 100%;
+      transform: translateY(-30%);
+      &:first-child {
+        transform: none;
+      }
+      &:nth-child(2n) {
+        text-align: right;
+      }
+    }
+  }
   .iphone svg {
-    filter: drop-shadow(0px 10px 30px rgba(52, 63, 75, 6));
+    width: 43%;
+    filter: drop-shadow(0px 10px 30px rgba(52, 63, 75, .6));
     image {
       height: auto;
     }

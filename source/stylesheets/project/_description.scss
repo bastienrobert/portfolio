@@ -1,0 +1,45 @@
+.description {
+  width: 60%;
+  margin: 0 auto 3em;
+  padding: 1.4em 4em 3em 4em;
+  color: $white;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+  }
+  a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    color: $white;
+    font-size: .875em;
+    margin-left: 2em;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10;
+      width: 100%;
+      height: 100%;
+      padding: 1px;
+      background-color: $white;
+      transform: translateX(-101%);
+      transition: transform .2s ease-in-out;
+    }
+    &:hover::after {
+      z-index: 20;
+      transform: translateX(101%);
+    }
+  }
+  h2 {
+    font-style: italic;
+    text-transform: lowercase;
+  }
+  p {
+    width: 65%;
+    line-height: 1.25em;
+  }
+}

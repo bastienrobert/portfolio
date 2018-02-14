@@ -9,12 +9,12 @@ dynamic:
 dir:
   - projects
 ---
-<div class="block">
+<div class="block" style="border-bottom-color: <%= project.color %>">
   <%= partial 'partials/title' %>
   <%= partial 'partials/main' %>
   <%= partial 'partials/description' %>
   <%= partial 'partials/mockups' %>
 </div>
-<div class="block">
+<div class="block" style="border-bottom-color: <%= project.color %>">
   <%= partial 'partials/sitemap' %>
 </div>

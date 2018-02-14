@@ -1,5 +1,7 @@
-<div class="description">
-  <h2><%= t('project.description.few-words') %></h2>
-  <a href="<%= project.url %>"><%= t('project.description.website') %></a>
+<div class="description" style="background-color: <%= project.color %>">
+  <div class="top">
+    <h2><%= t('project.description.few-words') %></h2>
+    <a href="<%= project.url %>"><%= t('project.description.website') %></a>
+  </div>
   <p><%= project[locale.to_s].description %></p>
 </div>

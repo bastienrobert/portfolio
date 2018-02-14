@@ -1,22 +1,3 @@
-/*
-WHAT IT HAS TODO ?
-
-- Listen on the turbolinks bar value width change
-=> Perhaps with listening if data-turbolinks-value as been added to the HTML ??
-  - Z-INDEX the border to be in front of all
-  - Display the loader view
-  - Get the turbolinks value
-  - Set it on this.loader during the progress
-- On progress over
-  - Hide the loader view
-  - Z-INDEX the border to be in back of all
-
-
-LISTENER ?
-window.getComputedStyle(document.getElementsByClassName('turbolinks-progress-bar')[0]).width
--> Width of the turbolinks progress bar
-*/
-
 class Loader {
   constructor () {
     this.border = document.getElementById('border')
@@ -25,33 +6,45 @@ class Loader {
     this.event()
   }
   event () {
-    document.addEventListener('turbolinks:request-start', () => {
-      if (Turbolinks.controller.adapter.progressBar.value > 0) {
-        this.border.style.zIndex = 1001
-        this.loader.classList.add('visible')
-        this.engine()
-      }
+    document.addEventListener('turbolinks:load', () => {
+      this.startEvent()
     })
-    document.addEventListener('turbolinks:request-end', () => {
-      this.border.style.zIndex = -1
-      this.loader.classList.remove('visible')
+    document.addEventListener('turbolinks:click', () => {
+      this.startEvent()
     })
   }
+  startEvent () {
+    Turbolinks.clearCache()
+    this.engine()
+  }
+  stopEvent () {
+    this.border.style.zIndex = -1
+    this.loader.classList.remove('visible')
+  }
   engine () {
-    let value,
+    let value = null,
+        backupValue = 0,
         progress = null,
         width = 0
 
     progress = setInterval(() => {
-      value = Turbolinks.controller.adapter.progressBar.value
+      value = Turbolinks.controller.adapter.progressBar.value || backupValue
+      if (value >= 1 ) {
+        value = backupValue
+      } else if (value > .05) {
+        this.border.style.zIndex = 1001
+        this.loader.classList.add('visible')
+      }
       width += 5
       this.progress.style.width = width + '%'
-
-      if (value >= 1) {
-        clearInterval(progress)
+      backupValue += .03
+      if ((value >= 1 && width >= 100) || backupValue >= 4) {
         value = 0
+        width = 0
+        clearInterval(progress)
+        this.stopEvent()
       }
-    }, 50)
+    }, 70)
   }
 }
 

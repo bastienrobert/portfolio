@@ -21,6 +21,8 @@ en:
   # ------------------
   # Header & footer
   # ------------------
+  header:
+    top: top
 
   # ------------------
   # Page translations

@@ -1,6 +1,10 @@
 <header>
   <%= current_link_to t('titles.homepage'), 'homepage' %>
-  <%= current_link_to t('titles.projects'), 'projects' %>
+  <% if current_page.data.dynamic %>
+    <%= current_link_to t('header.top'), 'projects', class: 'top' %>
+  <% else %>
+    <%= current_link_to t('titles.projects'), 'projects' %>
+  <% end %>
   <%= current_link_to t('titles.about'), 'about' %>
 </header>
 <div id="loader">

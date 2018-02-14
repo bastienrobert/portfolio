@@ -1,8 +1,19 @@
 #project {
+  @import "title";
   @import "main";
+  @import "description";
   @import "mockups";
-  img,
-  svg {
-    max-width: 400px;
+  @import "sitemap";
+  .block {
+    margin-top: 3em;
+    padding-bottom: 6em;
+    border-bottom-style: solid;
+    border-bottom-width: 17.5px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
