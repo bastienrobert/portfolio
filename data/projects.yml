@@ -21,3 +21,95 @@
     work: Front and back-end development
     main:
       production: culinary website
+- name: Next Time
+  slug: next-time
+  color: "#fbe3e0"
+  url: https://next-time.cf
+  main: cover.jpg
+  customer: IUT Formation MMI
+  mockups:
+    iphone:
+      - iphone-1.png
+      - iphone-2.png
+  technologies:
+    - VueJS
+    - AnimeJS
+  fr:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Développement front & back-end
+    main:
+      production: compteur d'évenements
+  en:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Front and back-end development
+    main:
+      production: events countdown
+- name: Capsule
+  slug: capsule
+  color: "#7da8f6"
+  url: https://capsule-bordeaux.fr
+  main: cover.jpg
+  customer: IUT Formation MMI
+  mockups:
+    iphone:
+      - iphone-1.png
+      - iphone-2.png
+  technologies:
+    - Middleman
+    - Ruby on Rails
+    - Snipcart
+  fr:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Développement front & back-end
+    main:
+      production: boutique éphémère
+  en:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Front and back-end development
+    main:
+      production: ephemeral eshop
+- name: Earth Attack
+  slug: earth-attack
+  color: "#4cecab"
+  url: https://earth-attack.fr
+  main: cover.jpg
+  customer: IUT Formation MMI
+  mockups:
+    iphone:
+      - iphone-1.png
+      - iphone-2.png
+  technologies:
+    - ThreeJS
+    - VueJS
+  fr:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Développement front & back-end
+    main:
+      production: jeu de sensibilisation à l'écologie
+  en:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Front and back-end development
+    main:
+      production: ecology awareness game
+- name: Sounds In Bordeaux
+  slug: sounds-in-bordeaux
+  color: "#304FFE"
+  url: https://soundsinbordeaux.com
+  main: cover.jpg
+  customer: IUT Formation MMI
+  mockups:
+    iphone:
+      - iphone-1.png
+      - iphone-2.png
+  technologies:
+    - Rails
+  fr:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Développement front & back-end
+    main:
+      production: soirées sur Bordeaux
+  en:
+    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    work: Front and back-end development
+    main:
+      production: parties in Bordeaux

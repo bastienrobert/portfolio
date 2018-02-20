@@ -2,15 +2,16 @@
   margin-left: 25%;
   h2 {
     display: inline-block;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
-    padding-bottom: .2em;
+    padding-bottom: .12em;
   }
   .work,
   .technologies {
     display: block;
     line-height: 1.25em;
     padding: .2em;
+    font-size: .8em;
   }
   .technologies:before {
     content: '- ';
@@ -86,7 +87,7 @@
   }
   .project {
     display: block;
-    margin: 2.5em;
+    margin: 1.5em;
   }
   .project:hover,
   .project:focus {
