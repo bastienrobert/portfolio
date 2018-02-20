@@ -29,5 +29,6 @@
   }
 }
 .turbolinks-progress-bar {
-  display: none;
+  z-index: 900;
+  background-color: $color-secondary;
 }

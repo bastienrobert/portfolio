@@ -1,4 +1,7 @@
 <footer>
-  <%= link_translate(:en) %>
-  <%= link_translate(:fr) %>
+  <% if locale == :fr %>
+    <%= link_translate(:en) %>
+  <% else %>
+    <%= link_translate(:fr) %>
+  <% end %>
 </footer>

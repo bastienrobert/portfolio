@@ -3,18 +3,17 @@ class Loader {
     this.border = document.getElementById('border')
     this.loader = document.getElementById('loader')
     this.progress = document.getElementById('progress')
+    Turbolinks.setProgressBarDelay(200)
     this.event()
   }
   event () {
     document.addEventListener('turbolinks:load', () => {
       this.startEvent()
     })
-    document.addEventListener('turbolinks:click', () => {
-      this.startEvent()
-    })
   }
   startEvent () {
-    Turbolinks.clearCache()
+    this.border.style.zIndex = 1001
+    this.loader.classList.add('visible')
     this.engine()
   }
   stopEvent () {
@@ -23,24 +22,17 @@ class Loader {
   }
   engine () {
     let value = null,
+        turboValue = null,
         backupValue = 0,
-        progress = null,
         width = 0
+    let progress = setInterval(() => {
+      turboValue = Turbolinks.controller.adapter.progressBar.value
+      turboValue == null || turboValue == 1 ? value = backupValue : value = turboValue
 
-    progress = setInterval(() => {
-      value = Turbolinks.controller.adapter.progressBar.value || backupValue
-      if (value >= 1 ) {
-        value = backupValue
-      } else if (value > .05) {
-        this.border.style.zIndex = 1001
-        this.loader.classList.add('visible')
-      }
+      backupValue += .05
       width += 5
       this.progress.style.width = width + '%'
-      backupValue += .03
-      if ((value >= 1 && width >= 100) || backupValue >= 4) {
-        value = 0
-        width = 0
+      if (value >= 1 && width >= 100) {
         clearInterval(progress)
         this.stopEvent()
       }
