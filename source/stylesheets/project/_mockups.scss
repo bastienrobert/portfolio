@@ -10,7 +10,7 @@
     svg {
       width: 100%;
       height: auto;
-      overflow: visible;
+      padding-top: 25px;
     }
   }
   .iphones {
@@ -32,7 +32,7 @@
   }
   .iphone svg {
     width: 43%;
-    filter: drop-shadow(0px 10px 30px rgba(52, 63, 75, .6));
+    filter: drop-shadow(0px 10px 30px rgba(52, 63, 75, .1));
     image {
       height: auto;
     }
