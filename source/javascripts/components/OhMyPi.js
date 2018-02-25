@@ -3,10 +3,10 @@ class OhMyPi {
     this.pi = document.getElementById('oh-my-pi')
     if (this.pi != null) {
       this.projects = document.getElementsByClassName('project')
+      this.preload()
       this.title = this.pi.getElementsByClassName('pi-title')[0]
       this.image = this.pi.getElementsByClassName('pi-image')[0]
       this.color = this.pi.getElementsByClassName('pi-image-color')[0]
-      this.preload()
       this.events()
     }
   }
@@ -22,12 +22,18 @@ class OhMyPi {
         this.pi.classList.add('visible')
       })
       project.addEventListener('mouseout', () => {
+        this.setImage(null)
         this.pi.classList.remove('visible')
       })
     }
   }
   setImage (slug) {
-    this.image.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '/images/' + slug + '/cover.jpg')
+    if (slug != null) {
+      slug = '/images/' + slug + '/cover.jpg'
+    } else {
+      slug = ''
+    }
+    this.image.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', slug)
   }
   preload () {
     for (let i = 0; i < this.projects.length; i++) {

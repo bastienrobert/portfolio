@@ -8,7 +8,6 @@ class BorderColor {
     for (let i = 0; i < this.projects.length; i++) {
       let project = this.projects[i],
           color = project.dataset.borderColor
-      console.log(color)
       project.addEventListener('mouseover', () => {
         this.engine(color)
       })
