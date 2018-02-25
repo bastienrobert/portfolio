@@ -1,43 +1,25 @@
 class BorderColor {
   constructor () {
-    this.border = document.getElementById('border')
-    this.color = this.getColor()
-    this.boxShadowData = this.parseBorderBox()
-    this.colorEngine(this.color)
+    this.borders = document.getElementById('borders').getElementsByClassName('border')
     this.projects = document.getElementsByClassName('project')
-    this.projects != null ? this.projectsEvents() : null
+    this.projects.length > 0 ? this.event() : null
   }
-  getColor () {
-    Turbolinks.clearCache()
-    let sections = document.getElementsByTagName('section')
-    for (let i = 0; i < sections.length; i++) {
-      if (sections[i].dataset.borderColor != null) {
-        return sections[i].dataset.borderColor
-      } else {
-        return this.parseBorderBox(true)
-      }
-    }
-  }
-  colorEngine (color) {
-    this.border.style.boxShadow = color + ' ' + this.boxShadowData
-  }
-  projectsEvents () {
+  event () {
     for (let i = 0; i < this.projects.length; i++) {
-      let project = this.projects[i]
+      let project = this.projects[i],
+          color = project.dataset.borderColor
+      console.log(color)
       project.addEventListener('mouseover', () => {
-        this.colorEngine(project.dataset.borderColor)
+        this.engine(color)
       })
       project.addEventListener('mouseout', () => {
-        this.colorEngine(this.color)
+        this.engine(null)
       })
     }
   }
-  parseBorderBox (onlyColor = false) {
-    let property = window.getComputedStyle(this.border).boxShadow.split(/ (?![^\(]*\))/)
-    if (onlyColor == true) {
-      return property[0]
-    } else {
-      return property.slice(1).join(' ')
+  engine (val) {
+    for (let j = 0; j < this.borders.length; j++) {
+      this.borders[j].style.backgroundColor = val
     }
   }
 }

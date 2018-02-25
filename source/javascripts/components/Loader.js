@@ -1,6 +1,5 @@
 class Loader {
   constructor () {
-    this.border = document.getElementById('border')
     this.loader = document.getElementById('loader')
     this.progress = document.getElementById('progress')
     Turbolinks.setProgressBarDelay(200)
@@ -12,12 +11,10 @@ class Loader {
     })
   }
   startEvent () {
-    this.border.style.zIndex = 1001
     this.loader.classList.add('visible')
     this.engine()
   }
   stopEvent () {
-    this.border.style.zIndex = -1
     this.loader.classList.remove('visible')
   }
   engine () {

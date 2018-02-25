@@ -23,4 +23,8 @@
     </svg>
   </div>
 </div>
-<div id="border"></div>
+<div id="borders">
+  <% ['top', 'right', 'bottom', 'left'].each do |side| %>
+    <div class="border <%= side %>" <%= "style='background-color: #{current_page.data.color};'" if current_page.data.color %>></div>
+  <% end %>
+</div>

@@ -4,6 +4,7 @@
 **Projects page**
 - Change the border to be the project color -> That could be fix _cf. **Border**_
 - Same on OhMyPi, need to reset everything on each change (some bugs on rapid change)
+- Projects image in div data **????**
 **Border**
 - Let's replace the border using box-shadow (perhaps??) to 4 div with *classes* and **id**:
   - **borders**: *border* container
