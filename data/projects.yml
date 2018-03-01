@@ -12,12 +12,12 @@
     - Rails
     - VueJS
   fr:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: TradFood est une plateforme en ligne ouverte à tous, qui permet de découvrir ou de redécouvrir les recettes les plus emblématiques du terroir bordelais. Avec un panel de recettes qu'il est possible de trier par niveau de difficultés, par saisons, et par types de plats, le site vous propose de réaliser par vous-même les recettes bordelaises qui font la richesse gastronomique de la région.
     work: Développement front & back-end
     main:
       production: site internet culinaire
   en:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: TradFood is an online platform, which allows you to discover or rediscover the most emblematic recipes of the Bordeaux local’food. With a panel of recipes sorted by difficulties, seasons, and types of dishes, the site offers you to make for yourself the Bordeaux recipes that are the gastronomic wealth of the region.
     work: Front and back-end development
     main:
       production: culinary website
@@ -35,13 +35,13 @@
     - VueJS
     - AnimeJS
   fr:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
-    work: Développement front & back-end
+    description: Next Time est le résultat d’un projet réalisé intégralement en Javascript, visant à proposer des compteurs jusqu’au début des différentes saisons de l’année. Chaque compteur est accompagné d’un dessin vectoriel, animé avec la librairie AnimeJS.
+    work: Développement front & back-end, gestion de projet
     main:
       production: compteur d'évenements
   en:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
-    work: Front and back-end development
+    description: Next Time is the result of a project realized entirely in Javascript, aiming to propose counters until the beginning of the different seasons of the year. Each counter is accompanied by a vector drawing animated with the AnimeJS library.
+    work: Front and back-end development, project management
     main:
       production: events countdown
 - name: Capsule
@@ -59,19 +59,19 @@
     - Ruby on Rails
     - Snipcart
   fr:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: Capsule est un e-shop éphémère proposant des produits imaginés par des créateurs de la région de Bordeaux. Chaque mois, le projet donne à un nouveau créateur la possibilité de présenter une sélection de ses créations qu’il est également possible de commander sur la plateforme.
     work: Développement front & back-end
     main:
       production: boutique éphémère
   en:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: Capsule is an ephemeral e-shop offering products designed by creators around Bordeaux. Each month, the project focuses on a new creator and a selection of his creations, that can be ordered through the platform.
     work: Front and back-end development
     main:
       production: ephemeral eshop
-- name: Earth Attack
-  slug: earth-attack
-  color: "#4cecab"
-  url: https://earth-attack.fr
+- name: Tableau de Bord
+  slug: tableau-de-bord
+  color: "#82c58d"
+  url: https://fermedavenir2k17.herokuapp.com
   main: cover.jpg
   customer: IUT Formation MMI
   mockups:
@@ -82,15 +82,15 @@
     - ThreeJS
     - VueJS
   fr:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: « Tableau de Bord » est un outil développé en collaboration avec l’association Fermes d’Avenir. Il vise à faciliter les procédés de création de permaculture. Cet outil permet de guider le permaculteur tout au long du processus de croissance de ses plantes grâce a un planning détaillé de semis, de plantation et de récolte.
     work: Développement front & back-end
     main:
-      production: jeu de sensibilisation à l'écologie
+      production: plannification de permaculture
   en:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: « Tableau de Bord » is a tool developed in collaboration with the association Fermes d'Avenir. It aims to facilitate processes for creating permaculture. This tool guides the permaculturist throughout the growth process of his plants through a detailed planning of seeding, planting and harvesting.
     work: Front and back-end development
     main:
-      production: ecology awareness game
+      production: permaculture plannification
 - name: Sounds In Bordeaux
   slug: sounds-in-bordeaux
   color: "#304FFE"
@@ -104,12 +104,12 @@
   technologies:
     - Rails
   fr:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: Sounds In Bordeaux est une initiative étudiante visant à faire connaitre les artistes et événements de musique électronique à Bordeaux. L’objectif est de favoriser la découverte, de promouvoir les soirées et de proposer un agenda des meilleures sorties à venir sur la scène bordelaise.
     work: Développement front & back-end
     main:
       production: soirées sur Bordeaux
   en:
-    description: All the rumors have finally died down and many skeptics have tightened their lips, the iPod does support video format now on its fifth generation. While the iPod is not the first to come up with this, it has certainly made its stature as the greatest in the market and can be dubbed as the best multimedia portable player available.
+    description: Sounds In Bordeaux is a student initiative aiming to introduce artists and electronic music events in Bordeaux. The main goal is to encourage discovery, to promote events and to propose an agenda of the best upcoming outings on the Bordeaux scene.
     work: Front and back-end development
     main:
       production: parties in Bordeaux
