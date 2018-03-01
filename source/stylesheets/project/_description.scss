@@ -41,5 +41,11 @@
   p {
     width: 65%;
     line-height: 1.25em;
+    @media #{$classicTablet} {
+      width: 100%;
+    }
+    @media #{$bigPhone} {
+      font-size: .85em;
+    }
   }
 }

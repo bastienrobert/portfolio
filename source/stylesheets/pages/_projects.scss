@@ -12,9 +12,17 @@
     line-height: 1.25em;
     padding: .2em;
     font-size: .8em;
+    @media #{$mediumPhone} {
+      display: none;
+    }
   }
-  .technologies:before {
-    content: '- ';
+  .technologies {
+    &:before {
+      content: '- ';
+    }
+    @media #{$bigPhone} {
+      display: none;
+    }
   }
   .show-more {
     display: inline-block;
@@ -38,6 +46,12 @@
       background-color: $color-secondary;
       transform: translateX(-101%);
       transition: transform .6s ease-in-out;
+    }
+    @media #{$bigPhone} {
+      visibility: visible;
+    }
+    @media #{$mediumPhone} {
+      visibility: hidden;
     }
   }
   #oh-my-pi {
@@ -80,6 +94,9 @@
         opacity: 1;
       }
     }
+    @media #{$bigPhone} {
+      display: none;
+    }
   }
   #projects-list {
     position: absolute;
@@ -103,5 +120,11 @@
         transform: translateX(101%);
       }
     }
+  }
+  @media #{$bigPhone} {
+    margin-left: 5%;
+  }
+  @media #{$mediumPhone} {
+    font-size: .85em;
   }
 }
