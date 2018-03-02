@@ -1,7 +1,7 @@
 class ParticleRepulsion {
   constructor () {
     this.container = document.getElementById('repulsion')
-    this.strength = 1000
+    this.strength = 800
     if (this.container != null) {
       this.dots = this.container.getElementsByTagName('circle')
       this.points = this.getPoints()
@@ -20,10 +20,13 @@ class ParticleRepulsion {
     })
   }
   event () {
-    window.addEventListener('mousemove', (e) => {
-      let x = e.pageX
-      let y = e.pageY
+    this.container.addEventListener('mousemove', (e) => {
+      let x = e.clientX
+      let y = e.clientY
       this.engine(x, y)
+    })
+    this.container.addEventListener('mouseout', () => {
+      this.reset()
     })
   }
   engine (x, y) {
@@ -46,6 +49,12 @@ class ParticleRepulsion {
       el.circle.setAttribute('cy', el.y)
     })
     window.requestAnimationFrame(this.engine)
+  }
+  reset () {
+    this.points.forEach((el, i) => {
+      el.circle.setAttribute('cx', el.ox)
+      el.circle.setAttribute('cy', el.oy)
+    })
   }
 }
 
