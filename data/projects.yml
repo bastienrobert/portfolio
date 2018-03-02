@@ -3,6 +3,8 @@
   color: "#E66242"
   url: https://tradfood.fr
   main: cover.jpg
+  sitemap: true
+  medium: https://medium.com/@bastienrbt
   customer: IUT Formation MMI
   mockups:
     iphone:
