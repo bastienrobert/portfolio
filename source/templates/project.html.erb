@@ -17,7 +17,12 @@ dir:
 </div>
 <% if project.medium %>
   <div id="medium-container" class="block" style="border-bottom-color: <%= project.color %>">
-    <%= partial 'partials/medium' %>
+    <%= partial 'partials/medium', locals: {
+        width: 1400,
+        height: 300,
+        widthDots: 30,
+        heightDots: 10
+      } %>
   </div>
 <% end %>
 <% if project.sitemap %>
