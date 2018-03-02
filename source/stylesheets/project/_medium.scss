@@ -1,5 +1,8 @@
 .medium {
   svg {
     min-height: 250px;
+    circle {
+      fill: rgba($grey, .5);
+    }
   }
 }
