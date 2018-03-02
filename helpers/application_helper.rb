@@ -18,4 +18,11 @@ module ApplicationHelper
     return "/#{config[:images_dir]}/#{p.slug}/#{i}"
   end
 
+  def markdown(text)
+    require 'redcarpet'
+    require 'redcarpet/render_strip'
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::StripDown)
+    Markdown.new(text).to_html.gsub(/<p>|<\/p>/, "")
+  end
+
 end

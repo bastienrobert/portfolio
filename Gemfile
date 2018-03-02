@@ -13,6 +13,7 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-transpath', '~>0.0.4'
 gem 'middleman-transpath_aria_current', :github => 'bastienrobert/middleman-transpath_aria_current'
 gem 'middleman-livereload'
+gem 'redcarpet'
 
 # SEO
 gem 'middleman-sitemap', :github => 'bastienrobert/middleman-sitemap'
