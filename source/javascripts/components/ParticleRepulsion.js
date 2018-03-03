@@ -9,6 +9,7 @@ class ParticleRepulsion {
         y: null
       }
       this.event()
+      this.engine()
     }
   }
   getPoints () {
@@ -32,7 +33,6 @@ class ParticleRepulsion {
       x: e.clientX,
       y: e.clientY
     }
-    this.engine()
   }
   engine () {
     let dx,
