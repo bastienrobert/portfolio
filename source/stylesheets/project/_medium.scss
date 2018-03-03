@@ -1,8 +1,13 @@
 .medium {
+  position: relative;
+  min-height: 250px;
   svg {
-    min-height: 250px;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     circle {
-      fill: rgba($grey, .5);
+      fill: rgba($grey, .25);
     }
   }
 }
