@@ -1,7 +1,7 @@
 class ParticleRepulsion {
   constructor () {
     this.container = document.getElementById('repulsion')
-    this.strength = 1000
+    this.strength = 500
     if (this.container != null) {
       this.points = this.getPoints()
       this.origin = {
@@ -31,7 +31,7 @@ class ParticleRepulsion {
   updateOrigin (e) {
     this.origin = {
       x: e.clientX,
-      y: e.clientY
+      y: e.clientY - document.getElementById('repulsion').getBoundingClientRect().top
     }
   }
   engine () {
