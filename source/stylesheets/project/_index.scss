@@ -3,6 +3,7 @@
   @import "main";
   @import "description";
   @import "mockups";
+  @import "medium";
   @import "sitemap";
   .block {
     margin-top: 3em;
@@ -14,6 +15,15 @@
     }
     &:last-child {
       border-bottom: none;
+    }
+  }
+  #medium-container {
+    padding: 0;
+    margin: 0;
+  }
+  #sitemap-container {
+    @media #{$mediumPhone} {
+      display: none;
     }
   }
 }

@@ -9,12 +9,24 @@ dynamic:
 dir:
   - projects
 ---
-<div class="block" style="border-bottom-color: <%= project.color %>">
+<div id="basic-container" class="block" style="border-bottom-color: <%= project.color %>">
   <%= partial 'partials/title' %>
   <%= partial 'partials/main' %>
   <%= partial 'partials/description' %>
   <%= partial 'partials/mockups' %>
 </div>
-<div class="block" style="border-bottom-color: <%= project.color %>">
-  <%= partial 'partials/sitemap' %>
-</div>
+<% if project.medium %>
+  <div id="medium-container" class="block" style="border-bottom-color: <%= project.color %>">
+    <%= partial 'partials/medium', locals: {
+        width: 1400,
+        height: 300,
+        widthDots: 30,
+        heightDots: 10
+      } %>
+  </div>
+<% end %>
+<% if project.sitemap %>
+  <div id="sitemap-container" class="block" style="border-bottom-color: <%= project.color %>">
+    <%= partial 'partials/sitemap' %>
+  </div>
+<% end %>

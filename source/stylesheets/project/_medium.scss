@@ -1,0 +1,21 @@
+.medium {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  svg {
+    position: absolute;
+    min-height: 100%;
+    z-index: -1;
+    circle {
+      fill: rgba($grey, .25);
+    }
+  }
+  img {
+    position: absolute;
+    width: 40%;
+    max-width: 600px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4em;
+  }
+}

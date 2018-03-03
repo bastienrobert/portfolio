@@ -1,0 +1,12 @@
+<div class="medium">
+  <% link_to project.medium do %>
+    <svg id="repulsion" viewBox="0 0 <%= width %> <%= height %>" xmlns="http://www.w3.org/2000/svg" version="1.1" width="<%= width %>" height="<%= height %>">
+      <% (1..widthDots).to_a.each do |x| %>
+        <% (1..heightDots).to_a.each do |y| %>
+          <circle cx="<%= x * (width / widthDots) - (width / widthDots / 2) %>" cy="<%= y * (height / heightDots) - (height / heightDots / 2) %>" r="2"></circle>
+        <% end %>
+      <% end %>
+    </svg>
+    <%= image_tag "icons/medium/large.svg" %>
+  <% end %>
+</div>
