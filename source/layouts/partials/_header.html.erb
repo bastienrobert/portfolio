@@ -7,6 +7,7 @@
   <% end %>
   <%= current_link_to t('titles.about'), 'about' %>
 </header>
+<% if current_page.data.slug == 'homepage' %>
 <div id="loader">
   <div class="progress-bar">
     <svg width="419" height="110" viewBox="0 0 419 110" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -23,6 +24,7 @@
     </svg>
   </div>
 </div>
+<% end %>
 <div id="borders">
   <% ['top', 'right', 'bottom', 'left'].each do |side| %>
     <div class="border <%= side %>" <%= "style='background-color: #{current_page.data.color};'" if current_page.data.color %>></div>

@@ -1,3 +1,23 @@
 ---
 slug: about
 ---
+<div class="hello">
+  <div class="presentation">
+    <h1>Bastien Robert <span>- développeur junior</span></h1>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="image">
+    <%= image_tag('me.png') %>
+  </div>
+</div>
+<div class="technos">
+  <h2>Mes technos</h2>
+  <div data-fluffy-container data-fluffy-options='{"mousePadding": 100, "showScrollbars": false}'>
+    <div data-fluffy-content>
+      <% sitemap.resources.select{ |r| r.path.start_with?('images/technologies') }.each do |image| %>
+        <%= image_tag(image.path.split('/').drop(1).join('/')) %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,9 +1,11 @@
 class Loader {
   constructor () {
     this.loader = document.getElementById('loader')
-    this.progress = document.getElementById('progress')
-    Turbolinks.setProgressBarDelay(200)
-    this.event()
+    if (this.loader != null) {
+      this.progress = document.getElementById('progress')
+      Turbolinks.setProgressBarDelay(200)
+      this.event()
+    }
   }
   event () {
     document.addEventListener('turbolinks:load', () => {

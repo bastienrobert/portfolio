@@ -1,10 +1,11 @@
 header {
   width: 80%;
-  margin: 3em auto;
+  margin: 3.5em auto;
   text-align: right;
   a {
     margin: 0 2em;
     text-transform: lowercase;
+    font-size: .813em;
     &:focus,
     &:hover,
     &.top {
