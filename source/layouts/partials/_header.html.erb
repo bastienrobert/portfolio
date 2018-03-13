@@ -1,9 +1,8 @@
 <header>
-  <%= current_link_to t('titles.homepage'), 'homepage' %>
   <% if current_page.data.dynamic %>
-    <%= current_link_to t('header.top'), 'projects', class: 'top' %>
+    <%= current_link_to t('header.top'), 'homepage', class: 'top' %>
   <% else %>
-    <%= current_link_to t('titles.projects'), 'projects' %>
+    <%= current_link_to t('titles.homepage'), 'homepage' %>
   <% end %>
   <%= current_link_to t('titles.about'), 'about' %>
 </header>

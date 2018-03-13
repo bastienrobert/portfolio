@@ -1,0 +1,11 @@
+<div id="intro">
+  <h1>Bastien Robert</h1>
+  <% t('homepage.intro').each do |p| %>
+    <p><%= p %></p>
+  <% end %>
+  <ul class="socials">
+    <% data.pages.socials.each do |k, v| %>
+      <li><%= link_to k, v, target: '_blank' %></li>
+    <% end %>
+  </ul>
+</div>

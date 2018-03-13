@@ -1,4 +1,6 @@
 #projects {
+  position: relative;
+  min-height: 100vh;
   margin-left: 25%;
   h2 {
     display: inline-block;
@@ -23,6 +25,11 @@
     @media #{$bigPhone} {
       display: none;
     }
+  }
+  #projects-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .show-more {
     display: inline-block;
@@ -71,6 +78,9 @@
       left: 50%;
       transform: translate(-50%, -30%);
       transition: opacity .35s $ease-in-cubic;
+      &:after {
+        display: none;
+      }
     }
     .pi-svg {
       position: fixed;
@@ -98,14 +108,9 @@
       display: none;
     }
   }
-  #projects-list {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
   .project {
     display: block;
-    margin: 1.5em;
+    padding: .8em 1.5em;
   }
   .project:hover,
   .project:focus {

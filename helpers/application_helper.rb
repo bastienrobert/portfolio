@@ -3,9 +3,9 @@ module ApplicationHelper
   # Fix the bug between i18n, dynamic page and directory_indexes
   def proxy_url(path)
     if locale == I18n.default_locale
-      return '/' + t('paths.projects') + '/' + path
+      return '/' + path
     else
-      return '/' + locale.to_s + '/' + t('paths.projects') + '/' + path
+      return '/' + locale.to_s + '/' + path
     end
   end
 

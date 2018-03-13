@@ -3,7 +3,7 @@ $color-secondary: #EA4C64;
 $color-background: #FFF;
 $grey: #6B6B6B;
 $white: #FFF;
-$black: #000;
+$black: #404040;
 
 $font-primary: 'Menlo', 'Helvetica Neue', 'Helvetica', sans-serif;
 
@@ -15,6 +15,8 @@ $classicTablet: "screen and (max-width : 875px)";
 $bigTablet: "screen and (max-width : 1024px)";
 $classicScreen: "screen and (max-width : 1200px)";
 $bigScreen: "screen and (max-width : 1600px)";
+
+$socialsHeight: "screen and (max-height : 550px)";
 
 $ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 $ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);

@@ -4,8 +4,9 @@ slug: about
 <div class="hello">
   <div class="presentation">
     <h1>Bastien Robert <span>- développeur junior</span></h1>
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <% t('about.text').each do |p| %>
+      <p><%= p %></p>
+    <% end %>
   </div>
   <div class="image">
     <%= image_tag('me.png') %>
@@ -20,4 +21,18 @@ slug: about
       <% end %>
     </div>
   </div>
+</div>
+<div class="socials">
+  <ul>
+    <% data.pages.socials.each do |v, k| %>
+      <li><%= link_to v, k, target: '_blank' %></li>
+    <% end %>
+    <li class="email">
+      <a href="#" class="main">Email</a>
+      <span>
+        <em class="copy-email"><%= t('about.email.copy') %></em> -&nbsp;
+        <%= mail_to 'bastienrobert@outlook.com', t('about.email.send') %>
+      </span>
+    </li>
+  </ul>
 </div>

@@ -1,0 +1,42 @@
+#intro {
+  width: 75%;
+  margin: 3em auto 0;
+  p {
+    font-size: 1.563em;
+    line-height: 1.25em;
+    color: $black;
+    margin-bottom: 1.2em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .socials {
+    display: flex;
+    li {
+      margin: 0 2em;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+  @media #{$bigPhone} {
+    p {
+      font-size: 1.1em;
+    }
+  }
+  @media #{$mediumPhone} {
+    .socials {
+      flex-wrap: wrap;
+    }
+    .socials li {
+      width: 50%;
+      margin: 0 0 1.5em;
+    }
+  }
+}
