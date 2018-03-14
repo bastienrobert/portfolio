@@ -27,6 +27,7 @@
     }
     [data-fluffy-container] {
       height: 100%;
+      opacity: .4;
     }
     [data-fluffy-content] {
       display: flex;
@@ -58,6 +59,7 @@
     li {
       display: inline-block;
       margin-right: 1.5em;
+      color: rgba($grey, .4);
       &:hover {
         color: $color-secondary;
       }

@@ -26,6 +26,9 @@
   &.visible {
     display: block;
     opacity: 1;
+    #progress {
+      animation: loader 2s;
+    }
   }
 }
 .turbolinks-progress-bar {
