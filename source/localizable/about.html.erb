@@ -27,12 +27,13 @@ slug: about
     <% data.pages.socials.each do |v, k| %>
       <li><%= link_to v, k, target: '_blank' %></li>
     <% end %>
-    <li class="email">
+    <li id="email">
       <a href="#" class="main">Email</a>
-      <span>
-        <em class="copy-email"><%= t('about.email.copy') %></em> -
-        <%= mail_to 'bastienrobert@outlook.com', t('about.email.send') %>
+      <span id="email-actions">
+        <em class="copy" data-email="<%= data.pages.about.mail %>"><%= t('about.email.copy') %></em> -
+        <%= mail_to data.pages.about.mail, t('about.email.send') %>
       </span>
+      <span class="copied">Copié</span>
     </li>
   </ul>
 </div>

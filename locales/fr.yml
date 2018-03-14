@@ -30,8 +30,8 @@ fr:
   homepage:
     h1: "Accueil"
     intro:
-      - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      - Salut ! Je suis Bastien, étudiant en développement web & mobile.
+      - Porté par ma passion pour Internet, j’essaie d’apprendre et de découvrir de nouvelles technologies chaque jour.
 
   about:
     h1: "A propos"
@@ -39,8 +39,8 @@ fr:
       copy: "Copier"
       send: "Envoyer un mail"
     text:
-      - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      - Depuis tout jeune, je m'adonne a la création de site web des languages front-end au languages back-end.
+      - Lors de ma formation, j'ai pu développer mes compétences à travers plusieurs projets web et mobiles. Aujourd'hui je souhaite me consacrer au développement d'expériences.
 
   projects:
     show-more: "voir plus"

@@ -50,9 +50,8 @@
   .socials {
     position: absolute;
     display: inline-block;
-    top: 0;
-    right: 0;
-    margin: 5em;
+    top: 5em;
+    right: 5em;
     transform-origin: top right;
     transform: rotate(90deg) translateX(100%);
     font-size: .813em;
@@ -64,24 +63,31 @@
         color: $color-secondary;
       }
     }
-    .main + span {
+    #email-actions {
       opacity: 0;
       display: none;
       cursor: pointer;
     }
-    .email:hover {
+    #email:hover {
       color: $grey;
       .main {
         opacity: 0;
         display: none;
       }
-      .main + span {
+      #email-actions {
         opacity: 1;
         display: inherit;
         em:hover,
         a:hover {
           color: $color-secondary;
         }
+      }
+    }
+    .copied {
+      display: none;
+      color: $color-secondary;
+      &.visible {
+        display: inline-block;
       }
     }
     @media #{$classicScreen} {
