@@ -3,8 +3,7 @@
   color: "#E66242"
   url: https://tradfood.fr
   main: cover.jpg
-  sitemap: true
-  medium: https://medium.com/@bastienrbt
+  medium: https://medium.com/@bastienrbt/tradfood-%C3%A9tude-de-cas-3645b925e306
   customer: IUT Formation MMI
   mockups:
     iphone:
@@ -28,6 +27,7 @@
   color: "#fbe3e0"
   url: https://next-time.cf
   main: cover.jpg
+  medium: https://medium.com/@bastienrbt/next-time-etude-de-cas-356aa70a195a
   customer: IUT Formation MMI
   mockups:
     iphone:
@@ -51,6 +51,7 @@
   color: "#232adc"
   url: https://texposou.cf
   main: cover.jpg
+  medium: https://medium.com/@bastienrbt/texposo%C3%B9-%C3%A9tude-de-cas-84f1cfc7d663
   customer: IUT Formation MMI
   mockups:
     iphone:
@@ -72,7 +73,9 @@
   slug: capsule
   color: "#7da8f6"
   url: https://capsule-bordeaux.fr
+  sitemap: true
   main: cover.jpg
+  medium: https://medium.com/@bastienrbt/capsule-etude-de-cas-aec741021b40
   customer: IUT Formation MMI
   mockups:
     iphone:

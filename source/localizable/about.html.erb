@@ -5,7 +5,7 @@ slug: about
   <div class="presentation">
     <h1>Bastien Robert <span>- développeur junior</span></h1>
     <% t('about.text').each do |p| %>
-      <p><%= p %></p>
+      <p><%= markdown p %></p>
     <% end %>
   </div>
   <div class="image">
@@ -13,7 +13,7 @@ slug: about
   </div>
 </div>
 <div class="technos">
-  <h2>Mes technos</h2>
+  <h2><%= t('about.technos') %></h2>
   <div data-fluffy-container data-fluffy-options='{"mousePadding": 100, "showScrollbars": false}'>
     <div data-fluffy-content>
       <% sitemap.resources.select{ |r| r.path.start_with?('images/technologies') }.each do |image| %>

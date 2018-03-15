@@ -5,6 +5,11 @@
     <%= current_link_to t('titles.homepage'), 'homepage' %>
   <% end %>
   <%= current_link_to t('titles.about'), 'about' %>
+  <% if locale == :en %>
+    <%= link_translate(:fr) %>
+  <% else %>
+    <%= link_translate(:en) %>
+  <% end %>
 </header>
 <% if current_page.data.slug == 'homepage' %>
 <div id="loader">
