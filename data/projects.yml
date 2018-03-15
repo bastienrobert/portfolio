@@ -27,6 +27,7 @@
   color: "#fbe3e0"
   url: https://next-time.cf
   main: cover.jpg
+  onepage: true
   medium: https://medium.com/@bastienrbt/next-time-etude-de-cas-356aa70a195a
   customer: IUT Formation MMI
   mockups:

@@ -40,13 +40,15 @@
       </filter>
       <linearGradient id="0347f2e9-aa93-4a31-83dd-17fa4a18e4ef" data-name="Dégradé sans nom 8" x1="734.18" y1="984.18" x2="735.18" y2="984.18" gradientTransform="matrix(40, 0, 0, -16, -28499.14, 17037.76)" xlink:href="#45e2d6df-7e0f-4299-baf8-38080dc72e3c"/>
       <linearGradient id="48a5c464-8edd-45c4-9ce5-a29ab784ca76" data-name="Dégradé sans nom 9" x1="735.17" y1="984.18" x2="734.17" y2="984.18" gradientTransform="matrix(40, 0, 0, -16, -28127.82, 17037.76)" xlink:href="#45e2d6df-7e0f-4299-baf8-38080dc72e3c"/>
-      <mask id="e5f414aa-2dc3-4e7e-beb9-c2665256ed3c<%= '-large' if large %>" x="264" y="79" width="1618" <%= large ? "height='3050'" : "height='1010'" %> maskUnits="userSpaceOnUse">
-        <g transform="translate(0 -91)">
-          <g id="5c9c027a-7ae5-4592-a798-6d4ba66f4659" data-name="mask-16">
-            <rect id="b88cc6a8-61b0-4014-b1dc-ffc15d65cac1" data-name="path-15" x="264" y="170" width="1618" <%= large ? "height='3050'" : "height='1010'" %> fill="#fff"/>
+      <% unless project.onepage %>
+        <mask id="e5f414aa-2dc3-4e7e-beb9-c2665256ed3c<%= '-large' if large %>" x="264" y="79" width="1618" <%= large ? "height='3050'" : "height='1010'" %> maskUnits="userSpaceOnUse">
+          <g transform="translate(0 -91)">
+            <g id="5c9c027a-7ae5-4592-a798-6d4ba66f4659" data-name="mask-16">
+              <rect id="b88cc6a8-61b0-4014-b1dc-ffc15d65cac1" data-name="path-15" x="264" y="170" width="1618" <%= large ? "height='3050'" : "height='1010'" %> fill="#fff"/>
+            </g>
           </g>
-        </g>
-      </mask>
+        </mask>
+      <% end %>
     </defs>
     <g id="77173500-bfe4-412c-9f4c-6d18bf82908b" data-name="Artboard">
       <g id="98dd64aa-035e-4372-81a9-808b5df3da43" data-name="macbook">
