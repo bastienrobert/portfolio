@@ -12,7 +12,7 @@
     <meta property="og:title" content="<%= title_translate %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= config[:host] + current_page.url %>" />
-    <meta property="og:image" content="<%= data.meta.image %>" />
+    <meta property="og:image" content="<%= config[:host] + data.meta.image %>" />
     <meta property="og:description" content="<%= description_translate %>" />
     <meta property="og:site_name" content="<%= data.meta.title %>" />
 
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="<%= title_translate %>">
     <meta name="twitter:description" content="<%= description_translate %>">
     <meta name="twitter:creator" content="<%= data.meta.twitter %>">
-    <meta name="twitter:image:src" content="<%= data.meta.image %>">
+    <meta name="twitter:image:src" content="<%= config[:host] + data.meta.image %>">
 
     <!-- Google Webmaster Tools -->
     <meta name="google-site-verification" content="<%= data.meta.google %>" />
@@ -36,7 +36,7 @@
     <section
       id="<%= current_page.data.dynamic == nil ? current_page.data.slug : current_page.data.dynamic.data %>"
       <%= schema_org %>>
-      
+
       <%= yield %>
     </section>
     <!-- <%= partial 'layouts/partials/footer' %> -->
