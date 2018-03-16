@@ -2,6 +2,12 @@
 slug: about
 ---
 <div class="hello">
+  <meta itemprop="name" content="Bastien Robert"/>
+  <meta itemprop="jobTitle" content="Développeur web"/>
+  <link itemprop="url" href="<%= config[:host] %>/about"/>
+  <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="IUT Bordeaux Montaigne"/>
+  </span>
   <div class="presentation">
     <h1>Bastien Robert <span>- développeur junior</span></h1>
     <% t('about.text').each do |p| %>
@@ -9,7 +15,7 @@ slug: about
     <% end %>
   </div>
   <div class="image">
-    <%= image_tag('me.png') %>
+    <%= image_tag 'me.png', itemprop: 'image' %>
   </div>
 </div>
 <div class="technos">
@@ -25,7 +31,7 @@ slug: about
 <div class="socials">
   <ul>
     <% data.pages.socials.each do |v, k| %>
-      <li><%= link_to v, k, target: '_blank' %></li>
+      <li><%= link_to v, k, target: '_blank', itemprop: 'sameAs' %></li>
     <% end %>
     <li id="email">
       <a href="#" class="main">Email</a>

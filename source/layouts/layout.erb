@@ -33,7 +33,10 @@
   </head>
   <body>
     <%= partial 'layouts/partials/header' %>
-    <section id="<%= current_page.data.dynamic == nil ? current_page.data.slug : current_page.data.dynamic.data %>">
+    <section
+      id="<%= current_page.data.dynamic == nil ? current_page.data.slug : current_page.data.dynamic.data %>"
+      <%= schema_org %>>
+      
       <%= yield %>
     </section>
     <!-- <%= partial 'layouts/partials/footer' %> -->

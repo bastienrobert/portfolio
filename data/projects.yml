@@ -5,6 +5,8 @@
   main: cover.jpg
   medium: https://medium.com/@bastienrbt/tradfood-%C3%A9tude-de-cas-3645b925e306
   customer: IUT Formation MMI
+  contributors:
+    - https://joshuarichard.fr
   mockups:
     iphone:
       - iphone-1.png
@@ -30,6 +32,8 @@
   onepage: true
   medium: https://medium.com/@bastienrbt/next-time-etude-de-cas-356aa70a195a
   customer: IUT Formation MMI
+  contributors:
+    - https://joshuarichard.fr
   mockups:
     iphone:
       - iphone-1.png
@@ -79,6 +83,9 @@
   main: cover.jpg
   medium: https://medium.com/@bastienrbt/capsule-etude-de-cas-aec741021b40
   customer: IUT Formation MMI
+  contributors:
+    - https://joshuarichard.fr
+    - https://emelinebailleul.com
   mockups:
     iphone:
       - iphone-1.png

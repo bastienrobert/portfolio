@@ -25,4 +25,14 @@ module ApplicationHelper
     Markdown.new(text).to_html.gsub(/<p>|<\/p>/, "")
   end
 
+  def schema_org
+    case current_page.data.slug
+    when 'about'
+      return "itemscope itemtype='http://schema.org/Person'"
+    when 'homepage'
+      return "itemscope itemtype='http://schema.org/CollectionPage'"
+    end
+    return "itemscope itemtype='http://schema.org/CreativeWork'" if current_page.data.dynamic
+  end
+
 end

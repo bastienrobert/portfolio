@@ -80,7 +80,7 @@ end
 
 # Under deploy
 configure :build do
-  config[:host] = "https://portfolio-starter.netlify.com"
+  config[:host] = "https://bastienrobert.fr"
 
   activate :minify_html
   activate :minify_css

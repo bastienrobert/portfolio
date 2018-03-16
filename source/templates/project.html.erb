@@ -9,6 +9,15 @@ dynamic:
 dir:
   - projects
 ---
+<meta itemprop="datePublished" content="<%= Time.now.strftime("%m/%d/%Y") %>" />
+<meta itemprop="copyrightYear" content="<%= Time.now.strftime("%Y") %>" />
+<meta itemprop="author" content="https://bastienrobert.fr/about" />
+<% if project.contributors %>
+  <% project.contributors.each do |contributor| %>
+    <meta itemprop="contributor" content="<%= contributor %>" />
+  <% end %>
+<% end %>
+
 <div id="basic-container" class="block" style="border-bottom-color: <%= project.color %>">
   <%= partial 'partials/title' %>
   <%= partial 'partials/main' %>

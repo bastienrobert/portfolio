@@ -7,9 +7,9 @@ GIT
 
 GIT
   remote: git://github.com/bastienrobert/middleman-transpath_aria_current.git
-  revision: 8e9af874d0cf035f2d45a9e3a2095c0d8e1653e5
+  revision: 23c1b6f66c055402b18f4ce2e41f65c56c226f85
   specs:
-    middleman-transpath_aria_current (0.1)
+    middleman-transpath_aria_current (0.2)
       middleman-core (~> 4.0)
 
 GIT
