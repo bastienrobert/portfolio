@@ -22,6 +22,11 @@
       width: 0;
       transition: width .2s;
     }
+    @media #{$mediumPhone} {
+      svg {
+        max-width: 80%;
+      }
+    }
   }
   &.visible {
     display: block;

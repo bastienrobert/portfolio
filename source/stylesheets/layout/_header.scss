@@ -24,4 +24,9 @@ header {
       display: inline-block;
     }
   }
+  @media #{$mediumPhone} {
+    a {
+      margin: 0 1em;
+    }
+  }
 }
