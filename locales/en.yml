@@ -10,7 +10,8 @@ en:
     project: "Project"
 
   descriptions:
-    homepage: "Here is a description for the homepage"
+    homepage: "Hello ! I am Bastien, student in web & mobile development. Driven by my passion for the Internet, I try to learn and discover new technologies every day... Visit my portfolio"
+    about: "About me ! I am Bastien, a young Bordeaux based developer and currently a second year student in multimedia and internet at IUT Bordeaux Montaigne..."
 
   paths:
     # Paths
