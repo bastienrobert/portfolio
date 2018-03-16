@@ -99,16 +99,32 @@
     @media #{$classicPhone} {
       position: relative;
       top: inherit;
-      left: inherit;
+      left: 0;
       transform: inherit;
       margin-left: 0;
+      transform: none;
+      margin: 1em 0 4em;
+      li {
+        margin-bottom: 1em;
+      }
+      #email {
+        display: block;
+      }
     }
     @media #{$socialsHeight} {
       position: relative;
       top: inherit;
-      left: inherit;
+      left: 0;
       transform: inherit;
       margin-left: 0;
+      transform: none;
+      margin: 1em 0 4em;
+      li {
+        margin-bottom: 1em;
+      }
+      #email {
+        display: block;
+      }
     }
   }
   @media #{$classicTablet} {
