@@ -10,7 +10,7 @@
       margin-bottom: 0;
     }
   }
-  .socials {
+  .some-socials {
     display: flex;
     li {
       margin: 0 2em;
@@ -30,11 +30,11 @@
       font-size: 1.1em;
     }
   }
-  @media #{$mediumPhone} {
-    .socials {
+  @media #{$bigPhone} {
+    .some-socials {
       flex-wrap: wrap;
     }
-    .socials li {
+    .some-socials li {
       width: 50%;
       margin: 0 0 1.5em;
     }
