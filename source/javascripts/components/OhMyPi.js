@@ -43,4 +43,4 @@ class OhMyPi {
   }
 }
 
-export default new OhMyPi
+module.exports = new OhMyPi

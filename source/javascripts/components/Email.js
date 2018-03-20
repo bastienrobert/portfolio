@@ -33,4 +33,4 @@ class Email {
   }
 }
 
-export default new Email
+module.exports = new Email

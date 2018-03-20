@@ -26,4 +26,4 @@ class Favicon {
   }
 }
 
-export default new Favicon
+module.exports = new Favicon

@@ -23,4 +23,4 @@ class BorderColor {
   }
 }
 
-export default new BorderColor
+module.exports = new BorderColor

@@ -55,4 +55,4 @@ class ParticleRepulsion {
   }
 }
 
-export default new ParticleRepulsion
+module.exports = new ParticleRepulsion
