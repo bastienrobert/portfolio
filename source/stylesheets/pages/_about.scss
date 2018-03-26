@@ -1,6 +1,12 @@
 #about {
   width: 75%;
   margin: 0 auto;
+  h2 {
+    color: $black;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+  }
   .hello {
     display: flex;
     p {
@@ -22,12 +28,6 @@
   .technos {
     height: 200px;
     margin-top: 2em;
-    h2 {
-      color: $black;
-      font-size: 1.25em;
-      font-style: italic;
-      font-weight: bold;
-    }
     [data-fluffy-container] {
       height: 100%;
       opacity: .4;
@@ -47,6 +47,19 @@
       }
       &:last-child {
         padding-right: 6em;
+      }
+    }
+  }
+  .awards {
+    margin-top: 2em;
+    h2 {
+      margin-bottom: 1.5em;
+    }
+    ul {
+      margin-bottom: 4em;
+      list-style: disc inside;
+      a {
+        color: $color-secondary;
       }
     }
   }

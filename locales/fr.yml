@@ -45,6 +45,10 @@ fr:
       - Depuis tout jeune, je m'adonne à la création de site web des langages front-end aux langages back-end.
       - Lors de ma formation, j'ai pu développer mes compétences à travers plusieurs projets web et mobiles. Aujourd'hui je souhaite me consacrer au développement d'expériences.
       - Voir mon <a href="/images/CV-fr.pdf" target="_blank">CV</a> ou mon <a href="/images/book.pdf" target="_blank">book</a>
+    awards:
+      title: Awards
+      text:
+        - <a href="/images/awards/design-nominees.pdf" target="_blank">SOTD</a> par <a href="https://www.designnominees.com/sites/bastien-robert-portfolio" target="_blank">Design Nominees</a>
 
   projects:
     show-more: "voir plus"

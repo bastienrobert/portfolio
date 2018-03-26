@@ -28,6 +28,14 @@ slug: about
     </div>
   </div>
 </div>
+<div class="awards">
+  <h2><%= t('about.awards.title') %></h2>
+  <ul>
+    <% t('about.awards.text').each do |p| %>
+      <li><%= markdown p %></li>
+    <% end %>
+  </ul>
+</div>
 <div class="some-socials">
   <ul>
     <% data.pages.socials.each do |v, k| %>
