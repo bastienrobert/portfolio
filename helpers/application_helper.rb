@@ -19,8 +19,6 @@ module ApplicationHelper
   end
 
   def markdown(text)
-    require 'redcarpet'
-    require 'redcarpet/render_strip'
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::StripDown)
     Markdown.new(text).to_html.gsub(/<p>|<\/p>/, "")
   end

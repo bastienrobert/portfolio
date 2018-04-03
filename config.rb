@@ -1,6 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
+require 'redcarpet'
+require 'redcarpet/render_strip'
 ## This enable a lot of things
 # Autoprefixer
 activate :autoprefixer do |prefix|
