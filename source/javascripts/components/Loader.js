@@ -8,8 +8,10 @@ class Loader {
   }
   engine () {
     this.loader.classList.add('visible')
+    document.body.style.cursor = 'progress'
     let progress = setTimeout(() => {
       this.loader.classList.remove('visible')
+      document.body.style.cursor = null
       clearInterval(progress)
     }, 2000)
   }
