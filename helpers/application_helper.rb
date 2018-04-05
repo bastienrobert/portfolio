@@ -33,4 +33,17 @@ module ApplicationHelper
     return "itemscope itemtype='http://schema.org/CreativeWork'" if current_page.data.dynamic
   end
 
+  def simple_translate(lang)
+    if lang === I18n.default_locale
+      return config[:host] + '/' +
+      link_translate_path(lang) +
+      link_translate_slug(lang)
+    else
+      return config[:host] + '/' +
+      lang.to_s + '/' +
+      link_translate_path(lang) +
+      link_translate_slug(lang)
+    end
+  end
+
 end

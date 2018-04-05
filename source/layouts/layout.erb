@@ -7,6 +7,9 @@
 
     <title><%= title_translate %></title>
     <meta name="description" content="<%= description_translate %>" />
+    <% locales.each do |locale| %>
+      <link rel="alternate" hreflang="<%= locale.to_s %>" href="<%= simple_translate(locale) %>"/>
+    <% end %>
 
     <!-- Facebook Open Graph data -->
     <meta property="og:title" content="<%= title_translate %>" />
