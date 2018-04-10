@@ -23,6 +23,8 @@ fr:
   # Header & footer
   # ------------------
   header:
+    homepage: accueil
+    about: a propos
     top: haut
 
   # ------------------

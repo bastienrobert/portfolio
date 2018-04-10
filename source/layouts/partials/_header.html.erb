@@ -2,9 +2,9 @@
   <% if current_page.data.dynamic %>
     <%= current_link_to t('header.top'), 'homepage', class: 'top' %>
   <% else %>
-    <%= current_link_to t('titles.homepage'), 'homepage' %>
+    <%= current_link_to t('header.homepage'), 'homepage' %>
   <% end %>
-  <%= current_link_to t('titles.about'), 'about' %>
+  <%= current_link_to t('header.about'), 'about' %>
   <% if locale == :en %>
     <%= link_translate(:fr) %>
   <% else %>

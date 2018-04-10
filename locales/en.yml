@@ -23,6 +23,8 @@ en:
   # Header & footer
   # ------------------
   header:
+    homepage: homepage
+    about: about
     top: top
 
   # ------------------
