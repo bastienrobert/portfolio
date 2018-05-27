@@ -1,8 +1,8 @@
 class OhMyPi {
 	constructor() {
 		this.pi = document.getElementById('oh-my-pi')
+		this.projects = document.getElementsByClassName('project')
 		if (this.pi != null) {
-			this.projects = document.getElementsByClassName('project')
 			this.images = {}
 			this.title = this.pi.getElementsByClassName('pi-title')[0]
 			this.imageContainer = this.pi.getElementsByClassName('pi-image-parent')[0]
