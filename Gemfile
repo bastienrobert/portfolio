@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
 # Core
-gem 'middleman', '~> 4.2'
+gem 'middleman', '~> 4.2', '>= 4.2.1'
 
 # Assets management
-gem 'middleman-minify-html'
+gem 'middleman-minify-html', '>= 3.4.1'
 gem 'middleman-imageoptim', :github => 'plasticine/middleman-imageoptim'
 gem 'middleman-critical', '~>0.0.2'
 
 # Misc
-gem 'middleman-autoprefixer', '~> 2.7'
-gem 'middleman-transpath', '~>0.0.4'
+gem 'middleman-autoprefixer', '~> 2.8', '>= 2.8.0'
+gem 'middleman-transpath', '~> 0.0.4'
 gem 'middleman-transpath_aria_current', :github => 'bastienrobert/middleman-transpath_aria_current'
-gem 'middleman-livereload'
+gem 'middleman-livereload', '>= 3.4.6'
 gem 'redcarpet'
 
 # SEO
