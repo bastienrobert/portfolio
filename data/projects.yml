@@ -78,7 +78,7 @@
 - name: Capsule
   slug: capsule
   color: "#7da8f6"
-  url: https://capsule-bordeaux.fr
+  url: https://capsule.bastienrobert.fr
   sitemap: true
   main: cover.jpg
   medium: https://medium.com/@bastienrbt/capsule-etude-de-cas-aec741021b40
