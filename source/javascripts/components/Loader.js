@@ -1,12 +1,13 @@
 class Loader {
-  constructor () {
+  constructor() {
     this.loader = document.getElementById('loader')
     if (this.loader != null) {
       this.progress = document.getElementById('progress')
       this.engine()
     }
   }
-  engine () {
+
+  engine() {
     this.loader.classList.add('visible')
     document.body.style.cursor = 'progress'
     let progress = setTimeout(() => {
@@ -17,4 +18,4 @@ class Loader {
   }
 }
 
-module.exports = new Loader
+module.exports = new Loader()

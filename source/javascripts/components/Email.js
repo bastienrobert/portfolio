@@ -1,5 +1,5 @@
 class Email {
-  constructor () {
+  constructor() {
     this.container = document.getElementById('email')
     this.actions = document.getElementById('email-actions')
     if (this.container != null) {
@@ -9,7 +9,8 @@ class Email {
       this.events()
     }
   }
-  events () {
+
+  events() {
     this.link.addEventListener('click', () => {
       this.content.select()
       document.execCommand('copy')
@@ -21,16 +22,18 @@ class Email {
       this.actions.style.display = 'inline-block'
     })
   }
-  createElement () {
+
+  createElement() {
     let input = document.createElement('input')
     input.type = 'text'
     input.value = this.link.dataset.email
-    input.style.position = "fixed"
-    input.style.right = "-100%"
-    input.style.top = "-100%"
+    input.style.position = 'fixed'
+    input.style.left = '-100%'
+    input.style.top = '-100%'
+    input.style.opacity = '0'
     this.link.appendChild(input)
     return input
   }
 }
 
-module.exports = new Email
+module.exports = new Email()
